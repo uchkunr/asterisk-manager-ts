@@ -1,12 +1,20 @@
 {
   "name": "asterisk-manager-ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A modern TypeScript implementation of Asterisk Manager Interface (AMI) client",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uchkunr/asterisk-manager-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uchkunr/asterisk-manager-ts/issues"
+  },
+  "homepage": "https://github.com/uchkunr/asterisk-manager-ts#readme",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "prepublishOnly": "npm run build",
