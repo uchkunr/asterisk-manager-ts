@@ -3,10 +3,9 @@ name: Publish to npm
 on:
   release:
     types: [published]
-  # Optional: Trigger when a version tag (v*) is pushed directly
-  # push:
-  #   tags:
-  #     - 'v*'
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   publish:
