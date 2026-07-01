@@ -1,0 +1,33 @@
+{
+  "name": "asterisk-manager-ts",
+  "version": "1.0.0",
+  "description": "A modern TypeScript implementation of Asterisk Manager Interface (AMI) client",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "asterisk",
+    "ami",
+    "manager",
+    "telephony",
+    "voip",
+    "typescript"
+  ],
+  "author": "Uchkun Rakhimov <uchkunrakhimov@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
+  }
+}
