@@ -1,5 +1,10 @@
 # asterisk-manager-ts
 
+[![npm version](https://img.shields.io/npm/v/asterisk-manager-ts.svg?style=flat)](https://www.npmjs.com/package/asterisk-manager-ts)
+[![npm downloads](https://img.shields.io/npm/dm/asterisk-manager-ts.svg?style=flat)](https://www.npmjs.com/package/asterisk-manager-ts)
+[![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![license](https://img.shields.io/npm/l/asterisk-manager-ts.svg?style=flat)](https://github.com/uchkunr/asterisk-manager-ts/blob/master/LICENSE)
+
 A modern, fully-typed TypeScript library for interacting with the **Asterisk Manager Interface (AMI)**.
 
 ## Features
