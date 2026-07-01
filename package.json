@@ -1,6 +1,6 @@
 {
   "name": "asterisk-manager-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A modern TypeScript implementation of Asterisk Manager Interface (AMI) client",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

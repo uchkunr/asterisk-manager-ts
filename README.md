@@ -2,22 +2,6 @@
 
 A modern, fully-typed TypeScript library for interacting with the **Asterisk Manager Interface (AMI)**.
 
-## Project Structure
-
-```
-asterisk-manager-ts/
-├── src/
-│   ├── __tests__/         # Unit tests (Vitest)
-│   │   └── parser.test.ts
-│   ├── index.ts           # Main entry point (exports client and types)
-│   ├── manager.ts         # AsteriskManager class implementation
-│   ├── parser.ts          # AmiParser class implementation (handles TCP packet streams)
-│   └── types.ts           # TypeScript interfaces for AMI Actions, Responses, and Events
-├── package.json           # Scripts, dependencies, and metadata
-├── tsconfig.json          # TypeScript compilation options
-└── .gitignore             # Ignored directories/files
-```
-
 ## Features
 
 - **TypeScript Native:** Fully typed API, making it easy to see expected structures.
@@ -91,4 +75,20 @@ ami.on('error', (err) => {
 
 // Establish connection
 ami.connect();
+```
+
+## Project Structure
+
+```
+asterisk-manager-ts/
+├── src/
+│   ├── __tests__/         # Unit tests (Vitest)
+│   │   └── parser.test.ts
+│   ├── index.ts           # Main entry point (exports client and types)
+│   ├── manager.ts         # AsteriskManager class implementation
+│   ├── parser.ts          # AmiParser class implementation (handles TCP packet streams)
+│   └── types.ts           # TypeScript interfaces for AMI Actions, Responses, and Events
+├── package.json           # Scripts, dependencies, and metadata
+├── tsconfig.json          # TypeScript compilation options
+└── .gitignore             # Ignored directories/files
 ```
