@@ -28,6 +28,3 @@ logs/
 # Testing
 coverage/
 .nyc_output/
-
-# Examples
-examples/
