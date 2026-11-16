@@ -19,3 +19,28 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Version 1.x of this package was a TypeScript port of NodeJS-AsteriskManager
+(https://github.com/pipobscure/NodeJS-AsteriskManager), distributed under the
+MIT License with the following notice:
+
+Copyright (C) 2012 - 2017 by
+  Philipp Dunkel <https://github.com/pipobscure>
+  abroweb <https://github.com/abroweb>
+  Igor Escobar <https://github.com/igorescobar>
+  Tekay <https://github.com/Tekay>
+  Kofi Hagan <https://github.com/kofibentum>
+  Hugo Chinchilla Carbonell <https://github.com/hugochinchilla>
+  Nick Mooney <https://github.com/Gnewt>
+  Asp3ctus <https://github.com/Asp3ctus>
+  Christian Gutierrez <https://github.com/chesstrian>
+  bchavet <https://github.com/bchavet>
+  Joserwan <https://github.com/joserwan>
+  Joseph Garrone <https://github.com/garronej>
+
+Based on a work Copyright (C) 2010 Brian White <mscdex@gmail.com>, but radically
+altered thereafter so as to constitute a new work.
+
+Version 2.0 is a rewrite and contains no code from that project.

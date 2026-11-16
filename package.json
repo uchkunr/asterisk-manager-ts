@@ -1,12 +1,45 @@
 {
   "name": "asterisk-manager-ts",
-  "version": "1.0.4",
-  "description": "A modern TypeScript implementation of Asterisk Manager Interface (AMI) client",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "2.0.0",
+  "description": "Typed, dependency-free Asterisk Manager Interface (AMI) client for Node.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "smoke": "node test/smoke.mjs && node test/smoke.cjs",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build && npm run smoke"
+  },
+  "keywords": [
+    "asterisk",
+    "ami",
+    "asterisk-manager",
+    "manager-interface",
+    "pbx",
+    "voip",
+    "telephony",
+    "pjsip",
+    "typescript"
+  ],
+  "author": "Uchkun Rakhimov <uchkunrakhimov@gmail.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uchkunr/asterisk-manager-ts.git"
@@ -15,27 +48,9 @@
     "url": "https://github.com/uchkunr/asterisk-manager-ts/issues"
   },
   "homepage": "https://github.com/uchkunr/asterisk-manager-ts#readme",
-  "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "prepublishOnly": "npm run build",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "lint": "eslint src/**/*.ts",
-    "format": "prettier --write \"src/**/*.ts\""
-  },
-  "keywords": [
-    "asterisk",
-    "ami",
-    "manager",
-    "telephony",
-    "voip",
-    "typescript"
-  ],
-  "author": "Uchkun Rakhimov <uchkunrakhimov@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
-    "@types/node": "^26.1.0",
-    "typescript": "^6.0.3",
-    "vitest": "^4.1.9"
+    "@types/node": "^22.20.5",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
   }
 }
