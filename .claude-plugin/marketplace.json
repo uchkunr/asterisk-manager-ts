@@ -1,0 +1,16 @@
+{
+  "name": "asterisk-manager-ts",
+  "description": "Asterisk AMI skill for Claude Code",
+  "owner": {
+    "name": "Uchkun Rakhimov",
+    "url": "https://github.com/uchkunr"
+  },
+  "plugins": [
+    {
+      "name": "asterisk-ami",
+      "source": "./",
+      "description": "Build and debug Asterisk Manager Interface (AMI) integrations: actions, events, Originate, queues, PJSIP, manager.conf and security",
+      "category": "development"
+    }
+  ]
+}

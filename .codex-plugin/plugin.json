@@ -1,0 +1,21 @@
+{
+  "name": "asterisk-ami",
+  "version": "1.0.0",
+  "description": "Build and debug Asterisk Manager Interface (AMI) integrations: actions, events, Originate, queues, PJSIP, manager.conf and security",
+  "author": {
+    "name": "Uchkun Rakhimov",
+    "url": "https://github.com/uchkunr"
+  },
+  "homepage": "https://github.com/uchkunr/asterisk-manager-ts",
+  "repository": "https://github.com/uchkunr/asterisk-manager-ts",
+  "license": "MIT",
+  "keywords": ["asterisk", "ami", "voip", "pbx", "pjsip", "telephony"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Asterisk AMI",
+    "shortDescription": "Asterisk Manager Interface integrations",
+    "developerName": "Uchkun Rakhimov",
+    "category": "Developer Tools",
+    "websiteURL": "https://github.com/uchkunr/asterisk-manager-ts"
+  }
+}
