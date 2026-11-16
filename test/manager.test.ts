@@ -153,7 +153,8 @@ describe('actions', () => {
     expect(result.events.map((e) => e.Channel)).toEqual(['PJSIP/101-00000001', 'PJSIP/103-00000003']);
     expect(result.complete?.ListItems).toBe('2');
     expect(result.response.Message).toBe('Channels will follow');
-    expect(seen).toEqual(['Newchannel']);
+    // FullyBooted may also arrive here, depending on timing after login.
+    expect(seen.filter((name) => name !== 'FullyBooted')).toEqual(['Newchannel']);
   });
 
   it('list() resolves a non-list response with no events', async () => {
